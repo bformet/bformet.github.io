@@ -7,24 +7,22 @@ body {
   padding: 0;
 }
 .picture {
-  background: grey url(avatar-square.JPG) no-repeat center center;
+  position: relative;
+  background: grey url(avatar-square.jpg) no-repeat center center;
   background-size: cover;
   height: 100vh;
   max-height: 100vw;
-  position: relative;
 }
-
 .container {
-  padding: 1rem;
-  padding-bottom: 2rem;
+  padding: 1rem 1rem 2rem 1rem;
   font: bold 4rem arial, helvetica, sans-serif;
 }
 .title {
+  position: absolute;
+  bottom: 0;
   color: beige;
   font: bold italic 7rem Georgia, DejaVu Serif, Norasi, serif;
   text-shadow: 2px 2px 5px rgba(50, 50, 50, 1);
-  position: absolute;
-  bottom: 0;
 }
 .subtitle {
   font-family: Impact, Arial Black, sans-serif;
@@ -52,10 +50,8 @@ body {
   list-style-type: none;
 }
 a {
-  text-decoration: none;
-}
-a {
   color: lightblue;
+  text-decoration: none;
 }
 a:active, a:hover {
   color: orange;
