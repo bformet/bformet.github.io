@@ -1,7 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Benoit Formet | Formet.info</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Benoit Formet - Ingénieur logiciel | Formet.info</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 </head>
 <body>
 <style>
@@ -16,27 +19,31 @@ body {
   position: relative;
   background: grey url(avatar-square.jpg) no-repeat center center;
   background-size: cover;
-  height: 100vh;
+  height: calc(100vh - 8em);
   max-height: 100vw;
-  transition: height 0.5s;
+  transition: height 0.3s ease;
 }
 .container {
   padding: 1rem 1rem 2rem 1rem;
-  font: bold 4rem arial, helvetica, sans-serif;
+  font: bold 1rem arial, helvetica, sans-serif;
 }
 .title {
   margin: 0;
   position: absolute;
   bottom: 0;
+  left: 1rem;
   color: beige;
   font: bold italic 7rem Georgia, DejaVu Serif, Norasi, serif;
+  letter-spacing: -0.01em;
   text-shadow: 2px 2px 5px rgba(50, 50, 50, 1);
 }
-.subtitle {
-  margin: 0;
-  font-size: 1em;
-  font-family: Impact, Arial Black, sans-serif;
+.jobtitle {
+  margin: 1rem 0 2rem 0;
+  font-size: 4.5em;
+  font-family: Arial Black, sans-serif;
+  letter-spacing: -0.04em;
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 1);
+  line-height: 1em;
 }
 .skills {
   background: beige;
@@ -59,12 +66,24 @@ body {
   padding: 0;
   list-style-type: none;
 }
+.contact {
+  font-size: 3em;
+  margin: 0.3em 0;
+}
 a {
   color: lightblue;
   text-decoration: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 a:active, a:hover {
-  color: orange;
+  -webkit-filter: brightness(1.2);
+  filter: brightness(1.2);
+}
+li {
+  margin: 5px 0;
+}
+i.fa {
+  color: darkgrey;
 }
 </style>
 
@@ -73,25 +92,25 @@ a:active, a:hover {
 </div>
 
 <div class="container skills">
-<h2 class="subtitle">Software Engineer</h2>
+<h2 class="jobtitle">Software Engineer</h2>
 <ul>
   <li>Full-stack web developer</li>
   <li>Python / Django coder</li>
   <li>C programmer</li>
-  <li>UI maker</li>
-  <li>Swiss knife</li>
+  <li>UI creator</li>
+  <!-- <li>Swiss knife</li> -->
   <li>Playful father</li>
 </ul>
 </div>
 
 <div class="container links">
-<small>Passez dire bonjour !</small>
+<p class="contact">Contactez-moi !</p>
 <ul>
-  <li><a href="https://twitter.com/bformet">Twitter @bformet</a></li>
-  <li><a href="https://www.linkedin.com/in/benoitformet">Linkedin</a></li>
-  <li><a href="http://stackoverflow.com/users/1189651/bformet">Stack Overflow</a></li>
-  <li><a href="https://github.com/bformet">Github</a></li>
-  <li><a href="https://www.indeed.com/me/benoit_formet">CV Indeed</a></li>
+  <li><a href="https://twitter.com/bformet"><i class="fa fa-fw fa-twitter"></i> Twitter <span style="font-family: georgia; font-style: italic; font-weight: normal">@bformet</span></a></li>
+  <li><a href="https://www.linkedin.com/in/benoitformet"><i class="fa fa-fw fa-linkedin-square"></i> Linkedin</a></li>
+  <li><a href="http://stackoverflow.com/users/1189651/bformet"><i class="fa fa-fw fa-stack-overflow"></i> Stack Overflow</a></li>
+  <li><a href="https://github.com/bformet"><i class="fa fa-fw fa-github"></i> Github</a></li>
+  <li><a href="https://www.indeed.com/me/benoit_formet"><i class="fa fa-fw fa-file-text-o"></i> CV Indeed</a></li>
 </ul>
 </div>
 

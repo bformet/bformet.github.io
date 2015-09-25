@@ -1,4 +1,4 @@
 bformet.github.io
 =================
 
-My homepage with infos and links
+My homepage with my developer skills and links to various online profiles
